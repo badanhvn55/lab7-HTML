@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form _ Lab 8</title>
+    <link rel="stylesheet" href="lab8.css">
+</head>
+<body>
+<form method="post" action="https://youtube-api-challenger.appspot.com/member/register">
+    <fieldset>
+        <legend>Thông tin cơ bản</legend>
+
+        <label for="name">Tên tài khoản</label>
+        <input class="in" type="text" name="username" placeholder="Tài khoản đăng nhập." minlength="7" required>
+        <br>
+
+        <label for="email">Email</label>
+        <input class="in" type="email" name="email" placeholder="Email của bạn." minlength="7" required>
+        <br>
+
+        <label for="password">Mật khẩu</label>
+        <input class="in" type="password" name="password" placeholder="Mật khẩu đăng nhập." minlength="7" required>
+        <br>
+
+        <label for="acPassword">Xác nhận mật khẩu</label>
+        <input class="in" type="password" name="password" placeholder="Nhập lại mật khẩu." minlength="7" required>
+
+    </fieldset>
+    <fieldset>
+        <legend>Thông tin chi tiết</legend>
+        <label for="fullName">Họ và tên</label>
+        <input class="in" type="text" name="fullName" placeholder="Họ và tên của bạn.">
+        <br>
+
+        <label for="birthDay">Ngày sinh</label>
+        <input class="in" type="date" name="birthDay" placeholder="mm/dd/yyyy">
+        <br>
+
+        <label for="gender">Giới tính</label>
+        <input type="radio" name="gender" value="1">Nam
+        <input type="radio" name="gender" value="0">Nữ
+        <br>
+
+        <label for="hobbies">Sở thích</label>
+        <input type="checkbox" name="favourite">Thể thao
+        <input type="checkbox" name="favourite">Xem phim
+        <input type="checkbox" name="favourite">Nghe nhạc
+        <input type="checkbox" name="favourite">Đọc sách
+        <br>
+
+        <label for="myImage">Ảnh đại diện</label>
+        <input type="file" name="choose file">
+        <br>
+
+        <label for="introduce">Giới thiệu về bản thân</label>
+        <textarea rows="10" cols="50"></textarea>
+    </fieldset>
+    <input class="btn ap" type="submit" value="Đăng Ký">
+    <input class="ap" type="reset" value="Làm lại">
+</form>
+
+</body>
+</html>
